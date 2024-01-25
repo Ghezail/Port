@@ -20,16 +20,84 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <!-- libsraries Stylesheet -->
+    <link href="libs/animate/animate.min.css" rel="stylesheet">
+    <link href="libs/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="libs/lightbox/css/lightbox.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        .progress {
+  background-color: #658467 ; 
+  justify-content: flex-start;
+  border-radius: 50px; 
+  align-items: center ;
+  position : relative;
+  display:flex; 
+  height:25px ;
+  width: 100%;
+}
+.prog-value1{
+  animation : load1 3s normal forwards; 
+  border-radius: 50px;
+  background-color: #658467;
+  height: 25px;
+  width: 0;
+}
+
+.prog-value2{
+  animation : load2 3s normal forwards; 
+  border-radius: 50px;
+  background-color: #658467;
+  height: 25px;
+  width: 0;
+}
+
+.prog-value3{
+  animation : load3 3s normal forwards; 
+  border-radius: 50px;
+  background-color: #658467;
+  height: 25px;
+  width: 0;
+}
+
+.progress p {
+  color: white; 
+  padding : 6px ;
+
+
+}
+@keyframes load1 {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 50%;
+  }
+}
+
+@keyframes load2 {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 80%;
+  }
+}
+
+@keyframes load3 {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 70%;
+  }
+}
+    </style>
 </head>
 
 <body>
@@ -89,40 +157,30 @@
                         <h3 class="mb-5">I'm Ghezail Abdulrahman </h3>
                         <p class="mb-4">Fresh graduate Information Technology Student </p>
                         <div class="skill mb-4">
+                            <div class="prog-value1">
                             <div class="d-flex justify-content-between">
-                                <p class="mb-2">HTML/CSS</p>
-                                <p class="mb-2">60%</p>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="60"  aria-valuemax="100"></div>
+                                <p style="color:white; right: -18px; position: relative;">HTML / CSS <span text-white float-right>            70%</span> </p>
                             </div>
                         </div>
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <p class="mb-2">Illustration</p>
-                                <p class="mb-2">85%</p>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="85"  aria-valuemax="100"></div>
-                            </div>
+                           
                         </div>
                         <div class="skill mb-4">
+                            <div class="prog-value2">
                             <div class="d-flex justify-content-between">
-                                <p class="mb-2">UI & UX </p>
-                                <p class="mb-2">50%</p>
+                                <p style="color:white; right: -18px; position: relative;">Illustaration<span text-white float-right>                85%</span> </p>
                             </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="50"  aria-valuemax="100"></div>
                             </div>
+                           
                         </div>
                         <div class="skill mb-4">
+                            <div class="prog-value3">
                             <div class="d-flex justify-content-between">
-                                <p class="mb-2">JS </p>
-                                <p class="mb-2">30%</p>
+                                <p style="color:white; right: -18px; position: relative;">UI & UX<span text-white float-right>                75%</span> </p>
                             </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="30"  aria-valuemax="100"></div>
-                            </div>
+                           
+                        </div>
+                        
+                            
                         </div>
                        
                   
@@ -145,16 +203,16 @@
 
     </div>
 
-    <!-- JavaScript Libraries -->
+    <!-- JavaScript libsraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="libs/wow/wow.min.js"></script>
+    <script src="libs/easing/easing.min.js"></script>
+    <script src="libs/waypoints/waypoints.min.js"></script>
+    <script src="libs/counterup/counterup.min.js"></script>
+    <script src="libs/owlcarousel/owl.carousel.min.js"></script>
+    <script src="libs/isotope/isotope.pkgd.min.js"></script>
+    <script src="libs/lightbox/js/lightbox.min.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
